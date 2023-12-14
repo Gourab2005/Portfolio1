@@ -1,0 +1,232 @@
+:root{
+    --vio:#6200ff;
+    --black:#444;
+    --boxshadow: 0.5rem 0.5rem 0.5rem 0.1rem rgba(49, 2, 239, 0.447);
+    --txtshadow: .4rem .4rem 0 rgba(0,0,0,.2);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all 0.5s ease-out;
+    text-decoration: none;
+}
+body{
+    height: 8000px;
+}
+section{
+    padding: 2rem 9%;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+.header {
+    padding: 2rem 9%;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    box-shadow: 0.5rem 1.5rem rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+}
+.header .logo{
+    font-size: 2.5rem;
+    color: var(--vio);
+}
+.header .navbar a{
+    font-size: 1.7rem;
+    color: var(--vio);
+    margin-left: 4rem;
+    padding: 0.75rem 1.5rem;
+    border: 0.5rem;
+}
+.header .navbar a:hover{
+    border: 2px solid var(--vio);
+    border-radius: 2rem;
+    color: #fff;
+    background-color: var(--vio);
+}
+#menu-btn{
+    font-size: 2.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: var(--vio);
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 10rem;
+}
+.home .image{
+    flex: 1 1 45rem;
+}
+.home .image img{
+    width: 90%;
+    background-color: var(--vio);
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.home .content{
+    flex: 1 1 45rem;
+}
+.home .content h3{
+    font-size: 4.5rem;
+    color: var(--black);
+    line-height: 1.8;
+    text-shadow: var(--txtshadow);
+}
+.home .content p{
+    font-size: 1.7rem;
+    color: var(--black);
+    line-height: 1.8;
+    padding:1rem 0;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .5rem;
+    padding-left: 1rem;
+    border: 1px solid var(--vio);
+    color: var(--vio);
+    box-shadow: var(--boxshadow);
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+.btn:hover{
+    color: #fff;
+    background: var(--vio);
+}
+.bot{
+    display: flex;
+    height: 20rem;
+    justify-content: left;
+}
+.home .content .bot p{
+    border: 1px solid var(--vio);
+    border-radius: 2rem;
+    text-align: center;
+    padding: 2rem 2rem;
+    margin: auto;
+    color: #fff;
+    background: var(--vio);
+    position: relative;
+}
+.guidbotparant{
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+}
+.guidbot{
+    display: flex;
+    padding-left: 0;
+    padding-top: 10rem;
+}
+.guidbot img{
+    height: 10rem;
+}
+.guidbotparant .guidbot p{
+    
+    border: 1px solid var(--vio);
+    border-radius: 2rem;
+    padding: 1rem 1rem;
+    /* margin: auto; */
+    margin-bottom: auto;
+    color: #fff;
+    background: var(--vio);
+    position: relative;
+    font-size: 1.7rem;
+}
+
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(3px);
+    transform: translateY(-80%);
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
+
+@media(max-width:768px){
+    #menu-btn{
+        display: initial;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 120%;
+        right: 1rem;
+        border-radius: .5rem;
+        box-shadow: var(--boxshadow);
+        width: 15rem;
+        text-align: center;
+        background:var(--vio);
+        transform: scale(0);
+        opacity: 0;
+        transform-origin: top right;
+        transition: none;
+    }
+    .header .navbar.active {
+        transform: scale(1);
+        opacity: 1;
+        transition: .3s ease-out;
+    }
+    .header .navbar a{
+        font-size: 2rem;
+        display: block;
+        margin: 2.5rem;
+        color: #fff;
+    }
+    .home .content h3{
+        font-size: 3.5rem;
+        text-align: center;
+        color: var(--black);
+        line-height: 1.8;
+        text-shadow: var(--txtshadow);
+    }
+    .home .image img{
+        width: 100%;
+        background-color: var(--vio);
+        border: 2px solid white;
+        border-radius: 50%;
+    }
+    .bot{
+        display: block;
+        text-align: center;
+    }
+    .guidbot{
+        display: flex;
+        padding-top: 35vh;
+        padding-left: 0;
+    }
+    .guidbotparant{
+        position: sticky;
+        top: -20%;
+    }
+    
+}
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    section{
+        padding: 2rem;
+    }
+}
