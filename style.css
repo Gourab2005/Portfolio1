@@ -236,7 +236,7 @@ html{
         right: 1rem;
         border-radius: .5rem;
         box-shadow: var(--boxshadow);
-        width: 15rem;
+        width: 30rem;
         text-align: center;
         background:var(--vio);
         transform: scale(0);
