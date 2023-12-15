@@ -15,8 +15,16 @@
     transition: all 0.5s ease-out;
     text-decoration: none;
 }
-body{
-    height: 8000px;
+.heading{
+    display: block;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1rem 2rem;
+    background: #000;
+    color: #fff;
+    border: 2px solid rgb(180, 160, 245);
+    border-radius: 10rem;
+    margin-top: 1rem;
 }
 section{
     padding: 2rem 9%;
@@ -110,11 +118,6 @@ html{
     color: #fff;
     background: var(--vio);
 }
-.bot{
-    display: flex;
-    height: 20rem;
-    justify-content: left;
-}
 .home .content .bot p{
     border: 1px solid var(--vio);
     border-radius: 2rem;
@@ -124,49 +127,6 @@ html{
     color: #fff;
     background: var(--vio);
     position: relative;
-}
-.guidbotparant{
-    position: sticky;
-    top: 0;
-    padding: 1rem;
-}
-.guidbot{
-    display: flex;
-    padding-left: 0;
-    padding-top: 10rem;
-}
-.guidbot img{
-    height: 10rem;
-}
-.guidbotparant .guidbot p{
-    
-    border: 1px solid var(--vio);
-    border-radius: 2rem;
-    padding: 1rem 1rem;
-    /* margin: auto; */
-    margin-bottom: auto;
-    color: #fff;
-    background: var(--vio);
-    position: relative;
-    font-size: 1.7rem;
-}
-.guidbotparant .heading{
-    display: flex;
-    position: absolute;
-    top: 12rem;
-    margin-left: 88%;
-}
-.guidbotparant .heading h3{
-    border: 1px solid var(--vio);
-    border-radius: 2rem;
-    padding: 1rem 1rem;
-    /* margin: auto; */
-    margin-bottom: auto;
-    color:black;
-    background:yellow;
-    position: relative;
-    font-size: 1.7rem;
-    text-align: center;
 }
 .hidden{
     opacity: 0;
@@ -212,7 +172,7 @@ html{
     gap: 2rem;
     grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
     padding-bottom: 5rem;
-    background: rgb(54, 53, 53);
+    background: rgb(14, 13, 13);
     color: #fff;
 }
 .icon-container2 .icons{
@@ -231,7 +191,37 @@ html{
     margin-top: 3rem;
     border: 2px solid;
     background-color: #fff;
-
+}
+/* --------------------------------------------------------------- */
+.icon-container3{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    padding-bottom: 5rem;
+    background: rgb(0, 0, 0);
+    color: #fff;
+    margin-top: 1rem;
+}
+.icon-container3 .icons{
+    border: 1px solid ;
+    text-align: center;
+    padding: 2.5rem;
+}
+.icon-container3 .icons i{
+    font-size: 4.5rem;
+    color: rgb(255, 255, 255);
+}
+.icon-container3 .icons h3{
+    font-size: 2.5rem;
+    color:var(--black);
+    padding: 0.5rem;
+    margin-top: 3rem;
+    border: 2px solid;
+    background-color: #fff;
+}
+.icon-container3 .icons p{
+    padding-top: 3rem;
+    font-size: 2rem;
 }
 
 
@@ -282,14 +272,12 @@ html{
         display: grid;
         gap: 2rem;
         grid-template-columns: repeat(auto-fit,minmax(15rem,0.5fr));
-        background: rgba(0,0,0,1);
         color: #fff;
     }
     .icon-container2{
         display: grid;
         gap: 2rem;
         grid-template-columns: repeat(auto-fit,minmax(15rem,0.5fr));
-        background: rgb(54, 53, 53);
         color: #fff;
     }
 
