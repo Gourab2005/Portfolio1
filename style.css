@@ -150,7 +150,24 @@ html{
     position: relative;
     font-size: 1.7rem;
 }
-
+.guidbotparant .heading{
+    display: flex;
+    position: absolute;
+    top: 12rem;
+    margin-left: 88%;
+}
+.guidbotparant .heading h3{
+    border: 1px solid var(--vio);
+    border-radius: 2rem;
+    padding: 1rem 1rem;
+    /* margin: auto; */
+    margin-bottom: auto;
+    color:black;
+    background:yellow;
+    position: relative;
+    font-size: 1.7rem;
+    text-align: center;
+}
 .hidden{
     opacity: 0;
     transition: all 1s;
@@ -161,6 +178,60 @@ html{
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
+}
+.icon-container{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    padding-bottom: 5rem;
+    background: rgba(0,0,0,1);
+    color: #fff;
+}
+.icon-container .icons{
+    border: 1px solid ;
+    text-align: center;
+    padding: 2.5rem;
+}
+.icon-container .icons i{
+    font-size: 4.5rem;
+    color: yellow;
+}
+.icon-container .icons h3{
+    font-size: 2.5rem;
+    color:var(--black);
+    padding: 0.5rem;
+    margin-top: 3rem;
+    border: 2px solid;
+    background-color: #fff;
+
+}
+
+/* ------------------------------------------------------------------- */
+.icon-container2{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    padding-bottom: 5rem;
+    background: rgb(54, 53, 53);
+    color: #fff;
+}
+.icon-container2 .icons{
+    border: 1px solid ;
+    text-align: center;
+    padding: 2.5rem;
+}
+.icon-container2 .icons i{
+    font-size: 4.5rem;
+    color: rgb(0, 255, 255);
+}
+.icon-container2 .icons h3{
+    font-size: 2.5rem;
+    color:var(--black);
+    padding: 0.5rem;
+    margin-top: 3rem;
+    border: 2px solid;
+    background-color: #fff;
+
 }
 
 
@@ -207,20 +278,21 @@ html{
         border: 2px solid white;
         border-radius: 50%;
     }
-    .bot{
-        display: block;
-        text-align: center;
+    .icon-container{
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fit,minmax(15rem,0.5fr));
+        background: rgba(0,0,0,1);
+        color: #fff;
     }
-    .guidbot{
-        display: flex;
-        padding-top: 35vh;
-        padding-left: 0;
+    .icon-container2{
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fit,minmax(15rem,0.5fr));
+        background: rgb(54, 53, 53);
+        color: #fff;
     }
-    .guidbotparant{
-        position: sticky;
-        top: -20%;
-    }
-    
+
 }
 @media(max-width:450px){
     html{
