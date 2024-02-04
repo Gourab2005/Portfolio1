@@ -1,5 +1,7 @@
-This website is in its initial phase so I will update it and make it more interactive and beautifull with my skills
+<h1>PORTFOLIO</h1>
+Visit here : https://gourab2005.github.io/Portfolio/
 
+This website is in its initial phase so I will update it and make it more interactive and beautifull with my skills
 
 <!-- 1. skill
 2. contact
