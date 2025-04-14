@@ -1,204 +1,585 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio- Gourab Das</title>
-    <!-- font awsome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- css linking -->
+    <title>Gourab Das - Web Developer & IT Student</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-    <!-- header section starts -->
-    <header class="header">
-
-
-        <a href="#" class="logo">Portfolio</a>
-
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#skills">Skills</a>
-            <a href="#work">Work</a>
-            <a href="#contactme">Contact</a>
-            <a href="#blog">Blog</a>
-            <a href="#" class="btn"><i class="fa-solid fa-file-arrow-down fa-beat-fade"></i> Download CV </a>
-        </nav>
-
-        <div id="menu-btn" class="fas fa-bars"></div>
-
-    </header>
-<!-- header section ends -->
-
-
-<!-- home section starts -->
-
-    <section class="home" id="home">
-
-        <div class="image" class="hidden">
-            <img src="images/unnamed-removebg-preview.png" class="hidden" alt="">
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <span style="--i:1;">G</span>
+            <span style="--i:2;">O</span>
+            <span style="--i:3;">U</span>
+            <span style="--i:4;">R</span>
+            <span style="--i:5;">A</span>
+            <span style="--i:6;">B</span>
         </div>
+    </div>
 
-        <div class="content">
-            <h3 class="hidden">Hello, I am Gourab Das</h3>
-            <p 
-            class="hidden">Hello, I'm Gourab Das, a first-year B.Tech student in Information Technology. Enthusiastic about web development and design, I possess proficiency in GitHub, Git, C++, and C. I proudly manage Sourcify, a website with over 100 registered members. Eager to explore the dynamic intersections of technology and creativity, I am committed to honing my skills in the ever-evolving field of information technology.
-            </p>
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-text">GD</span>
+            </div>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#availability" class="nav-link">Availability</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
         </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Gourab Das">Gourab Das</h1>
+            <div class="typing-container">
+                <span class="static-text">I'm a </span>
+                <span class="typing"></span>
+            </div>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn primary-btn">Contact Me</a>
+                <a href="resume.pdf" download class="btn secondary-btn">
+                    <i class="fas fa-download"></i> Download CV
+                </a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#about">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrow">
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
+        </div>
     </section>
 
-<!-- home setion ends -->
-
- <!-- different sections part starts -->
-    <div class="container">
-
-        <!-- Technical skills section start -->
-        <div class="heading hidden" id="skills">
-            <h3>Technical Skills</h3>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="https://media.licdn.com/dms/image/v2/D5603AQG1NQCr5JhkCw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1732723549322?e=1750291200&v=beta&t=Ljur9zzXCQBzYxqCwpeMz0mx-Q7SdagUX1JZg7uCGFA" alt="Gourab Das">
+                        <div class="image-border"></div>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/gourab2005/" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:dgourab574@gmail.com" class="social-icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Hello, I'm <span class="highlight">Gourab Das</span></h3>
+                    <p class="about-description">
+                        I'm a passionate MERN Stack Developer and IT student currently in my 2nd year at Netaji Subhash Engineering College in Kolkata. I specialize in creating responsive and dynamic web applications using modern technologies.
+                    </p>
+                    <p class="about-description">
+                        I'm fluent in English, Bengali, and Hindi, and I'm open to freelance work and internships in web development and design.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <span class="detail-icon"><i class="fas fa-user-graduate"></i></span>
+                            <div class="detail-info">
+                                <h4>Education</h4>
+                                <p>B.Tech in Information Technology</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon"><i class="fas fa-map-marker-alt"></i></span>
+                            <div class="detail-info">
+                                <h4>Location</h4>
+                                <p>Kolkata, India</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon"><i class="fas fa-language"></i></span>
+                            <div class="detail-info">
+                                <h4>Languages</h4>
+                                <p>English, Bengali, Hindi</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon"><i class="fas fa-briefcase"></i></span>
+                            <div class="detail-info">
+                                <h4>Availability</h4>
+                                <p>Freelance & Internships</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <section class="icon-container">
-            
-            <div class="icons hidden">
-                <i class="fa-brands fa-html5"></i>
-                <h3>HTML5</h3>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Skills</h2>
+                <div class="section-line"></div>
             </div>
-
-            <div class="icons hidden">
-                <i class="fa-brands fa-css3-alt"></i>
-                <h3>CSS3</h3>
+            <div class="skills-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="development">
+                        <i class="fas fa-code"></i> Development
+                    </button>
+                    <button class="tab-btn" data-tab="design">
+                        <i class="fas fa-palette"></i> Design
+                    </button>
+                    <button class="tab-btn" data-tab="languages">
+                        <i class="fas fa-language"></i> Languages
+                    </button>
+                    <button class="tab-btn" data-tab="education">
+                        <i class="fas fa-book-open"></i> Education
+                    </button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="development">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <h4>HTML</h4>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <h4>CSS</h4>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <h4>JavaScript</h4>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <h4>React</h4>
+                                    <span>75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <h4>Node.js</h4>
+                                    <span>70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="70"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <h4>MongoDB</h4>
+                                    <span>65%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="65"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="design">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <h4>Figma</h4>
+                                    <span>75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <h4>Canva</h4>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <h4>UI/UX Design</h4>
+                                    <span>70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="70"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <h4>Responsive Design</h4>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="languages">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <h4>English</h4>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <h4>Bengali</h4>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <h4>Hindi</h4>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="education">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <h4>Web Development</h4>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <h4>Data Structures</h4>
+                                    <span>70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="70"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <h4>Algorithms</h4>
+                                    <span>65%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="65"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <h4>Database Management</h4>
+                                    <span>75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="icons hidden">
-                <i class="fa-brands fa-js"></i>
-                <h3>Javascript</h3>
-            </div>
-
-            <div class="icons hidden">
-                <i class="fa-solid fa-c"></i>++
-                <h3>C++ language</h3>
-            </div>
-
-            <div class="icons hidden">
-                <i class="fa-brands fa-c"></i>
-                <h3>C language</h3>
-            </div>
-
-            <div class="icons hidden">
-                <i class="fa-brands fa-figma"></i>
-                <h3>Figma</h3>
-            </div>
-
-        </section>
-
-        <!-- Technical skills section ends -->
-
-        <!-- Other skills section start -->
-        <div class="heading hidden">
-            <h3>Other Skills</h3>
         </div>
-        <section class="icon-container2">
+    </section>
 
-            <div class="icons hidden">
-                <i class="fa-brands fa-html5"></i>
-                <h3>Leadership</h3>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Services</h2>
+                <div class="section-line"></div>
+                <p class="section-description">
+                    I offer various services including web development, tutoring, and study partnerships.
+                    Check my availability and book a session!
+                </p>
             </div>
-
-            <div class="icons hidden">
-                <i class="fa-brands fa-css3-alt"></i>
-                <h3>Art</h3>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="service-title">Web Development</h3>
+                    <p class="service-description">
+                        Custom websites and web applications using MERN stack technologies.
+                    </p>
+                    <div class="service-price">Contact for pricing</div>
+                    <a href="#contact" class="service-btn">Book Now</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3 class="service-title">Tutoring Sessions</h3>
+                    <p class="service-description">
+                        One-to-one tutoring sessions for web development and IT subjects.
+                    </p>
+                    <div class="service-price">₹50 per 30-minute session</div>
+                    <a href="#contact" class="service-btn">Book Now</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="service-title">Study Companion</h3>
+                    <p class="service-description">
+                        Study together to improve productivity and learning outcomes.
+                    </p>
+                    <div class="service-price">₹20 per session</div>
+                    <a href="#contact" class="service-btn">Book Now</a>
+                </div>
             </div>
-
-            <div class="icons hidden">
-                <i class="fa-brands fa-js"></i>
-                <h3>communication</h3>
-            </div>
-
-            <!-- <div class="icons hidden">
-                <i class="fa-solid fa-c"></i>++
-                <h3></h3>
-            </div> -->
-
-        </section>
-        
-        <!-- My Projets section -->
-
-        <div class="heading hidden" id="work">
-            <h3>My Projects/Works</h3>
         </div>
-        <section class="icon-container3">
+    </section>
 
-            <div class="icons hidden">
-                <i class="fa-brands fa-chrome"></i>
-                <a href="https://sourcify.000webhostapp.com/"><h3>Visit Sourcify website</h3></a>
-                <a href="https://github.com/Gourab2005/Sourcify.git"><h3>Github</h3></a>
-                <p>Tech stacks: HTML,CSS </p>
-                <!-- <div class="paragraph">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In at officia iste cum! Iusto autem, dolores veniam obcaecati assumenda est recusandae vitae corrupti enim maiores, perferendis alias ab suscipit sit.</p>
-            </div> -->
+    <!-- Availability Section -->
+    <section id="availability" class="availability">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Check My Availability</h2>
+                <div class="section-line"></div>
+                <p class="section-description">
+                    Free 45-minute sessions available on Sundays (subject to availability)
+                </p>
             </div>
-            
-            <div class="icons hidden">
-                <i class="fa-brands fa-chrome"></i>
-                <a href="https://gourab2005.github.io/Hospitalsight/#home"><h3>Visit Medicare website</h3></a>
-                <a href="https://github.com/Gourab2005/Hospitalsight.git"><h3>Github</h3></a>
-                <p>Tech stacks: HTML,CSS </p>
-                <div class="paragraph">
-                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In at officia iste cum! Iusto autem, dolores veniam obcaecati assumenda est recusandae vitae corrupti enim maiores, perferendis alias ab suscipit sit.</p> -->
+            <div class="availability-container">
+                <div class="calendar-container">
+                    <div class="calendar-header">
+                        <button id="prev-month" class="calendar-nav-btn">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <h3 id="month-year">April 2025</h3>
+                        <button id="next-month" class="calendar-nav-btn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="weekdays">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>
+                    <div id="calendar-days" class="days"></div>
+                </div>
+                <div class="time-slots-container">
+                    <h3 class="time-slots-title">Available Time Slots</h3>
+                    <div id="time-slots" class="time-slots">
+                        <p class="no-slots-message">Select a date to see available slots</p>
+                    </div>
+                    <div id="booking-form" class="booking-form hidden">
+                        <h3>Book Your Session</h3>
+                        <form id="session-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="session-type">Session Type</label>
+                                <select id="session-type" required>
+                                    <option value="tutoring">Tutoring Session (₹50)</option>
+                                    <option value="study">Study Companion (₹20)</option>
+                                    <option value="free" disabled>Free Sunday Session</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Selected Date & Time</label>
+                                <p id="selected-datetime" class="selected-datetime"></p>
+                            </div>
+                            <button type="submit" class="btn primary-btn">Confirm Booking</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-            </div>
-
-        </section>
-        <!-- My Projets section ends -->
-        
-        <!-- contact me section starts -->
-        
-        <div class="heading hidden" id="contactme">
-            <h3>You can connect me through</h3>
         </div>
-        <section class="icon-container3">
+    </section>
 
-            <div class="icons hidden">
-                <i class="fa-brands fa-linkedin" style="color: #0a5ae6;"></i>
-                <a href="https://www.linkedin.com/in/gourab2005/"><h3>Linkedin</h3></a>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
             </div>
-            
-            <div class="icons hidden">
-                <i class="fa-solid fa-envelope" style="color: #02f785;"></i>
-                <a href="mailto:dgourab574@gmail.com"><h3>Email</h3></a>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <a href="mailto:dgourab574@gmail.com">dgourab574@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/gourab2005/" target="_blank">linkedin.com/in/gourab2005</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Location</h4>
+                            <p>Kolkata, West Bengal, India</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Availability</h4>
+                            <a href="#availability">Check my calendar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="contact-name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="contact-email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="contact-subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="contact-message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
             </div>
-
-        </section>
-        <!-- contact me section ends -->
-        
-        <!-- Blog section starts -->
-        
-        <div class="heading hidden" id="blog">
-            <h3>Visit My Blog</h3>
         </div>
-        <section class="icon-container3">
+    </section>
 
-            <div class="icons hidden">
-                <i class="fa-brands fa-blogger-b" style="color: #f2b407;"></i>
-                <a href="https://gourabdas2005.blogspot.com/"><h3>Visit</h3></a>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">GD</span>
+                    <p>Web Developer & IT Student</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/gourab2005/" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:dgourab574@gmail.com" class="social-icon">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
             </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Gourab Das. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-        </section>
-        <!-- Blog section ends -->
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-title">Booking Confirmation</h2>
+            <div id="modal-body">
+                <p>Your booking has been confirmed!</p>
+            </div>
+            <div class="modal-footer">
+                <button id="modal-close-btn" class="btn secondary-btn">Close</button>
+                <button id="modal-confirm-btn" class="btn primary-btn">Confirm</button>
+            </div>
+        </div>
     </div>
-    <!-- different sections part ends -->
 
-
-    <!-- custome js file linking -->
-    <script src="Javascript/script.js"></script> 
-    <script src="Javascript/loading _on_scroll.js"></script>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="main.js"></script>
+    <script src="animations.js"></script>
+    <script src="availability.js"></script>
 </body>
-
 </html>
