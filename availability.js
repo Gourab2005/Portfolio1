@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
         "2025-04-17": ["9:00 PM to 10:00 PM"],
         "2025-04-18": ["9:00 PM to 10:00 PM"],
         "2025-04-19": ["9:00 PM to 10:00 PM"],
-        "2025-04-20": ["6:00 PM to 7:00 PM", "9:00 PM to 10:00 PM"], // Sunday
+        "2025-04-20": ["6:00 PM to 7:00 PM"], // Sunday
         "2025-04-21": ["9:00 PM to 10:00 PM"],
         "2025-04-22": ["9:00 PM to 10:00 PM"],
         "2025-04-23": ["9:00 PM to 10:00 PM"],
